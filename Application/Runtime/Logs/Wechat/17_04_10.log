@@ -1,0 +1,743 @@
+[ 2017-04-10T13:11:27+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-04-10T13:13:31+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:17:31+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=d3e8008e42f012bfc1f28f0d47494f330088ce58&echostr=2108361552702709759&timestamp=1491801451&nonce=1301950886
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:17:57+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:18:07+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:18:24+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:25+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:26+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:26+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:27+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:28+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:28+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:18:54+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=72b634663dda46c0426737e331f1fd2021dcd909&timestamp=1491801534&nonce=600695305&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:18:59+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=67c8a4d14a35a0591a1a31972c84543eb2dbcdcf&timestamp=1491801539&nonce=1863026003&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T13:19:15+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=86749e4769a0af808d62ca87e658c6d87a7ea7f0&timestamp=1491801555&nonce=541060744&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:19:18+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=223c726bb113414c42839b14e3c3321ab2a81dbe&timestamp=1491801559&nonce=1817466882&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T13:19:48+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=0161c9507fbc72e1c60e519afe5049e6873cfb53&timestamp=1491801588&nonce=2119136182&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T13:23:22+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=f8e7d73a3e352ed13d072221b3a10635ac58c0b8&timestamp=1491801802&nonce=1212929137&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:23:28+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=83f1349ec1186c7c374a9185f7eebe3bb62d4947&timestamp=1491801808&nonce=1302671777&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:24:24+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=4596160b364521effb7bcc77c2628441adfbbcfb&timestamp=1491801864&nonce=38402782&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T13:24:25+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=e23d69e516856e55b752a343d290c0d7e8c063d1&timestamp=1491801865&nonce=1005234950&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:24:28+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=bd8978c87b0bf69c7e96af3724069712e65747d7&timestamp=1491801868&nonce=999737994&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:24:44+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:24:53+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T13:25:02+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:25:19+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:28:43+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:29:57+08:00 ] ::1 /MlyBook/Wechat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:30:14+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=b498915635dcfaef3c5adb724bf28fae7e6ceb58&timestamp=1491802211&nonce=1244335575&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:30:31+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=e97a544d3399add42a2c1a44f598ef010d7ab880&timestamp=1491802231&nonce=86541991&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:30:35+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=7594ead7d1789716de37e1a911cd213bc2497606&timestamp=1491802236&nonce=939734839&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:30:49+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=f2fa17f09a3422c7e604ff74f59210864f854765&timestamp=1491802249&nonce=1675410625&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:30:51+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=a2938994260086369da0978e9de10aad9d3f5905&timestamp=1491802252&nonce=1303911411&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:30:55+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=58e72da4cf4c65a199b326e39bb499dfc8a68a46&timestamp=1491802256&nonce=937828717&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T13:31:01+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=28b35425aaed4d2ed7db0fd92abb9d3c5b20446f&timestamp=1491802261&nonce=1845016716&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T13:31:04+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=YYwVnqmgYvE4LwC4a%2FS4EAsDZXDfVRaUtMAitVZRVCHUtkGaYzpCzQOegOPh1hNbENjGNAl65LyBAHIdC1dkWqdgf4kn%2Bh%2FVH%2F7%2BJT4libRAJbrMV4Pv2Y2o0701SaXDOymwvcPQV3UnGucL4nijS0tfDOmQSt11j5j3C%2F5kk67XkTsdNaPAJh6SwfVkh3xZ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:31:05+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=YYwVnqmgYvE4LwC4a%2FS4EAsDZXDfVRaUtMAitVZRVCHUtkGaYzpCzQOegOPh1hNbENjGNAl65LyBAHIdC1dkWqdgf4kn%2Bh%2FVH%2F7%2BJT4libRAJbrMV4Pv2Y2o0701SaXDOymwvcPQV3UnGucL4nijS0tfDOmQSt11j5j3C%2F5kk67XkTsdNaPAJh6SwfVkh3xZ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:31:59+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:32:11+08:00 ] 127.0.0.1 /MlyBook/Wechat/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:32:22+08:00 ] 127.0.0.1 /MlyBook/Wechat/View
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:33:31+08:00 ] 127.0.0.1 /MlyBook/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:33:52+08:00 ] 127.0.0.1 /MlyBook/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:33:53+08:00 ] 127.0.0.1 /MlyBook/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:34:13+08:00 ] ::1 /MlyBook/Wechat/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:34:21+08:00 ] ::1 /MlyBook/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:35:19+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:35:31+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:35:39+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/View/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:37:26+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=adc6a201c172edb1f2cdcde09f6a528132f36b1d&timestamp=1491802646&nonce=1935284288&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:37:34+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=EUQnO7NF1CfCOgdwvmOLqoduni5MQzbpoWCmFLJn%2FiGJpqEfoqWagCih3JfzCOSo%2FyVXUzg%2FIzx5Lnjx6uCwSRwzCRXeY%2BRipP7jGHwIUwGiJMlBxSy8QYB4dH4N94KZamFzyfxjiDaOGIBocZdhf4DpeE7KRDo4rKRU8DIa4vXk2XyunPUqYDpJrzzJ3bGM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:37:35+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=EUQnO7NF1CfCOgdwvmOLqoduni5MQzbpoWCmFLJn%2FiGJpqEfoqWagCih3JfzCOSo%2FyVXUzg%2FIzx5Lnjx6uCwSRwzCRXeY%2BRipP7jGHwIUwGiJMlBxSy8QYB4dH4N94KZamFzyfxjiDaOGIBocZdhf4DpeE7KRDo4rKRU8DIa4vXk2XyunPUqYDpJrzzJ3bGM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:37:43+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=EUQnO7NF1CfCOgdwvmOLqoduni5MQzbpoWCmFLJn%2FiGJpqEfoqWagCih3JfzCOSo%2FyVXUzg%2FIzx5Lnjx6uCwSRwzCRXeY%2BRipP7jGHwIUwGiJMlBxSy8QYB4dH4N94KZamFzyfxjiDaOGIBocZdhf4DpeE7KRDo4rKRU8DIa4vXk2XyunPUqYDpJrzzJ3bGM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:40:08+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/View/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:40:11+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/View/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:40:45+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:41:07+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:41:09+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: signature D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined index: timestamp D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Undefined index: nonce D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 165 行.
+
+[ 2017-04-10T13:41:15+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat?signature=d49e25c3056083f56243c9d054cf04a1b6ad5c4e&timestamp=1491802875&nonce=1338203837&openid=oC_AjuGs-Zk1dXSXIp-XWrXZZQYE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr D:\phpStudy\WWW\MlyBook\Application\Wechat\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:41:22+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=eGT7YbOOAfYsCkoJIXaWn7cmMO2EJocsSVB7dojkw3hRaWOuqHgMdNI%2FQZTwQifadCPYY9dbmxTJHd9QJrwD6Wo9CpKqTpUIdnn8NmZXEyzeDFqQqkkZ5irmADENL6xNxkut%2FA3VWQXak9WwLRumFp%2B4iOa98aKQRbE4gWXz2ax%2F81XaaUdcRO1lF4Lmw2dL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:41:22+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=eGT7YbOOAfYsCkoJIXaWn7cmMO2EJocsSVB7dojkw3hRaWOuqHgMdNI%2FQZTwQifadCPYY9dbmxTJHd9QJrwD6Wo9CpKqTpUIdnn8NmZXEyzeDFqQqkkZ5irmADENL6xNxkut%2FA3VWQXak9WwLRumFp%2B4iOa98aKQRbE4gWXz2ax%2F81XaaUdcRO1lF4Lmw2dL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:41:26+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:41:31+08:00 ] 127.0.0.1 /MlyBook/Wechat/View/index.html?nsukey=eGT7YbOOAfYsCkoJIXaWn7cmMO2EJocsSVB7dojkw3hRaWOuqHgMdNI%2FQZTwQifadCPYY9dbmxTJHd9QJrwD6Wo9CpKqTpUIdnn8NmZXEyzeDFqQqkkZ5irmADENL6xNxkut%2FA3VWQXak9WwLRumFp%2B4iOa98aKQRbE4gWXz2ax%2F81XaaUdcRO1lF4Lmw2dL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T13:42:33+08:00 ] 127.0.0.1 /MlyBook/index.php/Wechat/View/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:View
+
