@@ -1,7 +1,7 @@
 <?php
 return array (
   'DB_TYPE' => 'mysql',
-  'DB_HOST' => 'localhost',
+  'DB_HOST' => '5107521b.all123.net',
   'DB_NAME' => 'carshop',
   'DB_USER' => 'root',
   'DB_PWD' => '111111',
