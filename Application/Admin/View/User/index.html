@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>所有用户——后台管理</title>
+    <include file="Common/head"/>
+	<title></title>		
+</head>
+
+<include file="Common/top" /> 
+
+<body>
+	<div class="container clearfix">
+    <include file="Common/left"/>
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">用户查询</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="kw" value="<?php echo I('kw');?>" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>                          
+                            <th>ID</th>
+                            <th>昵称</th>
+                            <th>班级</th>
+                            <th>学号</th>
+                            <th>入学时间</th>
+                        </tr>
+                        <volist name="user" id="vo">
+	                        <tr>                         
+	                            <td>{$vo.id}</td>
+	                            <td>{$vo.username}</td>
+	                            <td>
+	                            	<if condition="$vo.classdes eq ''">暂无班级,请先分班<else/>{$vo.classdes}</if>
+	                            </td>
+	                            <td>
+	                            	<if condition="$vo.classnum eq ''"><else/>{$vo.classnum}</if>
+	                            </td>
+	                            <td>
+	                            	<if condition="$vo.classtime eq ''"><else/>{$vo.classtime}</if>
+	                            </td>                      
+	                        </tr>
+                        </volist>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>			

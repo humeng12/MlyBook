@@ -1,14 +1,14 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>『童老师ThinkPHP』后台管理</title>
+	<meta charset="UTF-8">
+    <title>分班——后台管理</title>
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
 <script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
 </head>
-<body>
+
 <div class="topbar-wrap white">
     <div class="topbar-inner clearfix">
         <div class="topbar-logo-wrap clearfix">
@@ -27,7 +27,9 @@
         </div>
     </div>
 </div> 
-<div class="container clearfix">
+<body>
+
+	<div class="container clearfix">
     <div class="sidebar-wrap">
     <div class="sidebar-title">
         <h1>菜单</h1>
@@ -69,71 +71,88 @@
     </div>
 </div>
     <div class="main-wrap">
+
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font">&#xe06b;</i><span>欢迎收看童老师ThinkPHP视频教程第三季度<span><a target="_blank" style="color:#f00; margin:0 20px;" href="http://www.chuanke.com/s2260700.html">点此查看视频教程</a></span></span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/MlyBook/index.php/Admin/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">分班</span></div>
         </div>
+
+
         <div class="result-wrap">
-            <div class="result-title">
-                <h1>快捷操作</h1>
-            </div>
             <div class="result-content">
-                <div class="short-wrap">
-                    <a href="#"><i class="icon-font">&#xe001;</i>新增作品</a>
-                    <a href="#"><i class="icon-font">&#xe005;</i>新增博文</a>
-                    <a href="#"><i class="icon-font">&#xe048;</i>新增作品分类</a>
-                    <a href="#"><i class="icon-font">&#xe041;</i>新增博客分类</a>
-                    <a href="#"><i class="icon-font">&#xe01e;</i>作品评论</a>
-                </div>
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                	<input type="hidden" name="id" value="<?php echo ($users["id"]); ?>" />
+                	<table class="insert-tab" width="100%">
+                		<tbody>
+	                		<tr>
+	                            <th>
+	                            	<i class="require-red">*</i>班级：
+	                            </th>
+	                            <td>
+	                                <input class="common-text required" name="classdes" size="50" type="text">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th>
+	                            	<i class="require-red">*</i>学号：
+	                            </th>
+	                            <td>
+	                                <input class="common-text required" id="classnum" name="classnum" size="50" type="text">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th>
+	                            	<i class="require-red">*</i>入学时间：
+	                            </th>
+	                            <td>
+	                                <input class="common-text required" id="classtime" name="classtime" size="50" type="text">
+	                            </td>
+	                        </tr>
+	                        <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" id="clickBtn" value="提交" type="submit"/>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button"/>
+                                    <i style="color:red";>请认真核对信息,确定无误后再提交</i>
+                                </td>
+                            </tr>
+	                	</tbody>
+                	</table>
+                </form>
             </div>
         </div>
-        <div class="result-wrap">
-            <div class="result-title">
-                <h1>系统基本信息</h1>
-            </div>
-            <div class="result-content">
-                <ul class="sys-info-list">
-                    <li>
-                        <label class="res-lab">操作系统</label><span class="res-info">WINNT</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">运行环境</label><span class="res-info">Apache/2.2.21 (Win64) PHP/5.3.10</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">PHP运行方式</label><span class="res-info">apache2handler</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">静静设计-版本</label><span class="res-info">v-0.1</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">上传附件限制</label><span class="res-info">2M</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">北京时间</label><span class="res-info">2014年3月18日 21:08:24</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">服务器域名/IP</label><span class="res-info">localhost [ 127.0.0.1 ]</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">Host</label><span class="res-info">127.0.0.1</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="result-wrap">
-            <div class="result-title">
-                <h1>使用帮助</h1>
-            </div>
-            <div class="result-content">
-                <ul class="sys-info-list">
-                    <li>
-                        <label class="res-lab">ThinkPHP交流群：</label><span class="res-info">484519446</span>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
+        
     </div>
-    <!--/main-->
-</div>
 </body>
 </html>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var mydate = new Date();
+		var year = mydate.getFullYear();
+		var day = mydate.getDate();
+	    var str = "";
+	    str += (year+"/");
+	    str += (mydate.getMonth()+1) + "/";
+	    str += day;
+
+  		$("#classtime").attr("value",str);
+
+  		var num = "";
+  		var randomNum=""; 
+		for(var i=0;i<5;i++) 
+		{ 
+			randomNum+=Math.floor(Math.random()*10); 
+		} 
+
+		num += year;
+		num += randomNum;
+		num += day;
+		num += mydate.getMinutes();
+		num += mydate.getSeconds();
+
+  		$("#classnum").attr("value",num);
+	});
+
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>分班——后台管理</title>
+    <include file="Common/head"/>
+</head>
+
+<include file="Common/top" /> 
+<body>
+
+	<div class="container clearfix">
+    <include file="Common/left"/>
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">分班</span></div>
+        </div>
+
+
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                	<input type="hidden" name="id" value="{$users.id}" />
+                	<table class="insert-tab" width="100%">
+                		<tbody>
+	                		<tr>
+	                            <th>
+	                            	<i class="require-red">*</i>班级：
+	                            </th>
+	                            <td>
+	                                <input class="common-text required" name="classdes" size="50" type="text">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th>
+	                            	<i class="require-red">*</i>学号：
+	                            </th>
+	                            <td>
+	                                <input class="common-text required" id="classnum" name="classnum" size="50" type="text">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <th>
+	                            	<i class="require-red">*</i>入学时间：
+	                            </th>
+	                            <td>
+	                                <input class="common-text required" id="classtime" name="classtime" size="50" type="text">
+	                            </td>
+	                        </tr>
+	                        <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" id="clickBtn" value="提交" type="submit"/>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button"/>
+                                    <i style="color:red";>请认真核对信息,确定无误后再提交</i>
+                                </td>
+                            </tr>
+	                	</tbody>
+                	</table>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var mydate = new Date();
+		var year = mydate.getFullYear();
+		var day = mydate.getDate();
+	    var str = "";
+	    str += (year+"/");
+	    str += (mydate.getMonth()+1) + "/";
+	    str += day;
+
+  		$("#classtime").attr("value",str);
+
+  		var num = "";
+  		var randomNum=""; 
+		for(var i=0;i<5;i++) 
+		{ 
+			randomNum+=Math.floor(Math.random()*10); 
+		} 
+
+		num += year;
+		num += randomNum;
+		num += day;
+		num += mydate.getMinutes();
+		num += mydate.getSeconds();
+
+  		$("#classnum").attr("value",num);
+	});
+
+</script>

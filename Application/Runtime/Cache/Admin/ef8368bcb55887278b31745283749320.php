@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>后台管理</title>
+    <title>总任务-后台管理</title>
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
@@ -72,83 +72,66 @@
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">栏目管理</span></div>
+            <div class="crumb-list">
+                <i class="icon-font"></i>
+                <a href="/MlyBook/index.php/Admin/Index/index">首页</a>
+                <span class="crumb-step">&gt;</span>
+                <span class="crumb-name">总任务</span>
+            </div>
         </div>
+
         <div class="search-wrap">
             <div class="search-content">
-                <form action="/jscss/admin/design/index" method="post">
+                <form action="">
                     <table class="search-tab">
                         <tr>
-                            <th width="120">选择分类:</th>
-                            <td>
-                                <select name="search-sort" id="">
-                                    <option value="">全部</option>
-                                    <option value="19">精品界面</option><option value="20">推荐界面</option>
-                                </select>
-                            </td>
                             <th width="70">关键字:</th>
-                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="common-text" placeholder="关键字" name="kw" value="<?php echo I('kw');?>" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
                         </tr>
                     </table>
                 </form>
             </div>
         </div>
+
         <div class="result-wrap">
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="/MlyBook/index.php/Admin/Cate/add" class="btn btn-primary btn2"><i class="icon-font"></i>新增栏目</a>
-                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i><input form="myform" formaction="/MlyBook/index.php/Admin/Cate/bdel" type="submit" class="btn btn-primary btn2" value="批量删除" /></a>
-                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i><input form="myform" formaction="/MlyBook/index.php/Admin/Cate/sortcate" type="submit" class="btn btn-primary btn2" value="更新排序" /></a>
+                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary btn2"><i class="icon-font"></i>新增任务</a>
                     </div>
                 </div>
+
                 <div class="result-content">
                     <table class="result-tab" width="100%">
                         <tr>
                             <th class="tc" width="5%"><input class="allChoose" name="" id='check' type="checkbox"></th>
-                            <th>排序</th>
                             <th>ID</th>
-                            <th>栏目名称</th>
-                            <th>栏目类型</th>
-                            <th>缩略图</th>
-                            <th>是否PC端</th>
-                            <th>操作</th>
+                            <th>时间</th>
+                            <th>书籍标题</th>
+                            <th>书籍作者</th>
+                            <th>书籍封面</th>
+                            <th>阅读难度</th>
+                            <th>书籍介绍</th>
                         </tr>
-                        <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                             <td class="tc"><input name="ids[]" value="<?php echo ($vo["id"]); ?>" class="check" type="checkbox"></td>
-                            <td>
-                               
-                                <input class="common-input sort-input" name="<?php echo ($vo["id"]); ?>" value="<?php echo ($vo["sort"]); ?>" type="text">
-                            </td>
                             <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php if($vo['parentid'] != 0): ?>|<?php endif; echo str_repeat('-', $vo['level']*8); echo ($vo["name"]); ?></td>
-                            <td>
-                            <?php if($vo['type'] == 1): ?>列表<?php endif; ?>
-                            <?php if($vo['type'] == 2): ?>单页<?php endif; ?>
-                            <?php if($vo['type'] == 3): ?>留言<?php endif; ?>
-                            <?php if($vo['type'] == 4): ?>招聘<?php endif; ?>
-                            <?php if($vo['type'] == 5): ?>车辆列表<?php endif; ?>
-                            <?php if($vo['type'] == 6): ?>荣誉列表<?php endif; ?>
-                            <?php if($vo['type'] == 7): ?>求职表<?php endif; ?>
-                            </td>
+                            <td><?php echo ($vo["title"]); ?></td>
+                            <td><?php if($vo['rem'] == 1): ?>推荐<?php else: ?>未推荐<?php endif; ?></td>
                             <td>
                              <?php if($vo['pic'] != ''): ?><img src="/MlyBook<?php echo ($vo["pic"]); ?>" height="50">
                             <?php else: ?>
                             暂无缩略图<?php endif; ?>
                             </td>
+                            <td><?php echo ($vo["name"]); ?></td>
                             <td>
-                              <?php if($vo['pc'] == 1): ?>PC端
-                              <?php else: ?>
-                              移动端<?php endif; ?>  
-
-                            </td>
-                            <td>
-                                <a class="link-update" href="/MlyBook/index.php/Admin/Cate/edit/id/<?php echo ($vo["id"]); ?>">修改</a>
-                                <a class="link-del" onclick="return confirm('确定删除本栏目及其子栏目？');" href="/MlyBook/index.php/Admin/Cate/del/id/<?php echo ($vo["id"]); ?>">删除</a>
+                                <a class="link-update" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">修改</a>
+                                <a class="link-del" onclick="return confirm('确定删除改文章吗？');" href="/MlyBook/index.php/Admin/Task/del/id/<?php echo ($vo["id"]); ?>">删除</a>
                             </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>
+                    <div class="list-page"><?php echo ($page); ?></div>
                 </div>
             </form>
         </div>
