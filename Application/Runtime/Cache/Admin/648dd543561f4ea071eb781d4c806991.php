@@ -6,7 +6,12 @@
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
-<script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>	
+<script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/bootstrap.css"/>
+<script type="text/javascript" src="/MlyBook/Public/js/bootstrap.min.js"></script>	
 </head>
 
 <div class="topbar-wrap white">
@@ -83,7 +88,7 @@
                         <tr>
                             <th width="70">关键字:</th>
                             <td><input class="common-text" placeholder="关键字" name="kw" value="<?php echo I('kw');?>" id="" type="text"></td>
-                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                            <td><input class="btn btn-primary" name="sub" value="查询" type="submit"></td>
                         </tr>
                     </table>
                 </form>
@@ -106,7 +111,7 @@
 	                            	<?php if($vo["classdes"] == ''): ?>暂无班级,请先分班<?php else: echo ($vo["classdes"]); endif; ?>
 	                            </td>
                                 <td>
-                                    <a class="link-update" href="/MlyBook/index.php/Admin/User/edit/id/<?php echo ($vo["id"]); ?>">分班</a>
+                                    <a class="btn btn-info" href="/MlyBook/index.php/Admin/User/edit/id/<?php echo ($vo["id"]); ?>">分班</a>
                                 </td>
                             </td>                     
 	                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>

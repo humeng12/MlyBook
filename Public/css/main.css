@@ -1,4 +1,4 @@
-.sidebar-wrap{float: left;width: 189px;min-height:1024px;background: #f2f2f2;border-right:1px solid #ccc;/*cursor:e-resize;*/}
+.sidebar-wrap{float: left;,width: 189px;min-height:1024px;background: #f2f2f2;border-right:1px solid #ccc;}
 .main-wrap{margin-left: 190px;min-height:100%;}
 .sidebar-title{height: 40px;line-height: 40px;text-indent:1em;font-size: 24px;text-align: left;}
 .sidebar-title h1{font-weight: normal;}
@@ -29,9 +29,10 @@
 .result-list a{margin-right: 15px;}
 .result-list i{padding-right: 5px;}
 .result-tab{border-collapse:collapse;border: 1px solid #ddd;}
-.result-tab th{font-weight: normal;font-size: 15px;text-align: left;background: url(../images/tab-thbg.png) #f9f9f9 0 bottom repeat-x;}
+.result-tab th{font-weight: normal;font-size: 15px;}
 .result-tab th,.result-tab td{padding:5px;border-bottom: 1px solid #ddd;border-right: 1px solid #e1e1e1;}
 .result-tab tr{line-height:35px;}
+.result-tab th,td{text-align: center;}
 .result-tab th.tc,.result-tab td.tc{text-align: center;}
 .result-tab tr:nth-child(odd){background: #f9f9f9;}
 .result-tab tr:hover{background: #f1f1f1;}

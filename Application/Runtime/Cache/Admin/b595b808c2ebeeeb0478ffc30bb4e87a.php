@@ -7,6 +7,11 @@
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
 <script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/bootstrap.css"/>
+<script type="text/javascript" src="/MlyBook/Public/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="topbar-wrap white">
@@ -38,20 +43,21 @@
             <li>
                 <a href="#"><i class="icon-font">&#xe003;</i>基本操作</a>
                 <ul class="sub-menu">
-                    <li><a href="/MlyBook/index.php/Admin/User/index"><i class="icon-font">&#xe008;</i>所有用户</a></li>
-                    <li><a href="/MlyBook/index.php/Admin/User/divide"><i class="icon-font">&#xe008;</i>已分班用户</a></li>
-                    <li><a href="/MlyBook/index.php/Admin/User/undivide"><i class="icon-font">&#xe008;</i>未分班用户</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/User/index"><i class="icon-font">&#xe008;</i>所有学员</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/User/divide"><i class="icon-font">&#xe008;</i>已分班学员</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/User/undivide"><i class="icon-font">&#xe008;</i>未分班学员</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="icon-font">&#xe003;</i>常用操作</a>
+                <a href="#"><i class="icon-font">&#xe003;</i>学员任务</a>
                 <ul class="sub-menu">
-                    <li><a href="/MlyBook/index.php/Admin/Cate/lst"><i class="icon-font">&#xe008;</i>栏目管理</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Task/index"><i class="icon-font">&#xe008;</i>总任务</a></li>
+                    <!-- <li><a href="/MlyBook/index.php/Admin/Cate/lst"><i class="icon-font">&#xe008;</i>栏目管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Article/lst"><i class="icon-font">&#xe005;</i>文章管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Message/lst"><i class="icon-font">&#xe004;</i>留言管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Job/lst"><i class="icon-font">&#xe012;</i>求职信息</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Link/lst"><i class="icon-font">&#xe052;</i>友情链接</a></li>
-                    <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li>
+                    <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li> -->
                 </ul>
             </li>
             <li>

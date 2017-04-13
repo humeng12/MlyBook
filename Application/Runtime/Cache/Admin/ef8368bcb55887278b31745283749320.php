@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
 <script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
+
 </head>
 <body>
 <div class="topbar-wrap white">
@@ -98,7 +99,7 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary btn2"><i class="icon-font"></i>新增任务</a>
+                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary"><i class="icon-font"></i>新增任务</a>
                     </div>
                 </div>
 
