@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>管理员列表——后台管理</title>
-    <link rel="stylesheet" type="text/css" href="/Book/Public/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Book/Public/css/main.css"/>
-    <script type="text/javascript" src="/Book/Public/js/libs/modernizr.min.js"></script>
-    <script type="text/javascript" src="/Book/Public/js/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
+<script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
+<script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
+
 </head>
 <body>
 <div class="topbar-wrap white">
@@ -20,50 +21,59 @@
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="/Book/index.php/Admin/Admin/edit/id/<?php echo session('id');?>">欢迎您，<?php echo session('rolename');?>:<?php echo session('username');?></a></li>
-                <li><a href="/Book/index.php/Admin/Admin/edit/id/<?php echo session('id');?>">修改密码</a></li>
-                <li><a href="/Book/index.php/Admin/Admin/logout">退出</a></li>
+                <li><a href="/MlyBook/index.php/Admin/Admin/edit/id/<?php echo session('id');?>">欢迎您，<?php echo session('rolename');?>:<?php echo session('username');?></a></li>
+                <li><a href="/MlyBook/index.php/Admin/Admin/edit/id/<?php echo session('id');?>">修改密码</a></li>
+                <li><a href="/MlyBook/index.php/Admin/Admin/logout">退出</a></li>
             </ul>
         </div>
     </div>
 </div> 
 <div class="container clearfix">
     <div class="sidebar-wrap">
-        <div class="sidebar-title">
-            <h1>菜单</h1>
-        </div>
-
-<div class="sidebar-content">
-            <ul class="sidebar-list">
-                <li>
-                    <a href="#"><i class="icon-font">&#xe003;</i>常用操作</a>
-                    <ul class="sub-menu">
-                        <li><a href="/Book/index.php/Admin/Cate/lst"><i class="icon-font">&#xe008;</i>栏目管理</a></li>
-                        <li><a href="/Book/index.php/Admin/Article/lst"><i class="icon-font">&#xe005;</i>文章管理</a></li>
-                        <li><a href="/Book/index.php/Admin/Message/lst"><i class="icon-font">&#xe004;</i>留言管理</a></li>
-                        <li><a href="/Book/index.php/Admin/Job/lst"><i class="icon-font">&#xe012;</i>求职信息</a></li>
-                        <li><a href="/Book/index.php/Admin/Link/lst"><i class="icon-font">&#xe052;</i>友情链接</a></li>
-                        <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-font">&#xe018;</i>系统管理</a>
-                    <ul class="sub-menu">
-                        <li><a href="/Book/index.php/Admin/System/lst"><i class="icon-font">&#xe017;</i>系统设置</a></li>
-                        <li><a href="/Book/index.php/Admin/Admin/lst"><i class="icon-font">&#xe006;</i>管理员管理</a></li>
-                        <li><a href="/Book/index.php/Admin/Privilege/lst"><i class="icon-font">&#xe037;</i>权限列表</a></li>
-                        <li><a href="/Book/index.php/Admin/Role/lst"><i class="icon-font">&#xe046;</i>角色列表</a></li>
-                        <li><a href="system.html"><i class="icon-font">&#xe045;</i>数据还原</a></li>
-                    </ul>
-                </li>
-             
-            </ul>
-        </div>
+    <div class="sidebar-title">
+        <h1>菜单</h1>
     </div>
+
+    <div class="sidebar-content">
+        <ul class="sidebar-list">
+            <li>
+                <a href="#"><i class="icon-font">&#xe003;</i>基本操作</a>
+                <ul class="sub-menu">
+                    <li><a href="/MlyBook/index.php/Admin/User/index"><i class="icon-font">&#xe008;</i>所有学员</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/User/divide"><i class="icon-font">&#xe008;</i>已分班学员</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/User/undivide"><i class="icon-font">&#xe008;</i>未分班学员</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="icon-font">&#xe003;</i>学员任务</a>
+                <ul class="sub-menu">
+                    <li><a href="/MlyBook/index.php/Admin/Task/index"><i class="icon-font">&#xe008;</i>总任务</a></li>
+                    <!-- <li><a href="/MlyBook/index.php/Admin/Cate/lst"><i class="icon-font">&#xe008;</i>栏目管理</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Article/lst"><i class="icon-font">&#xe005;</i>文章管理</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Message/lst"><i class="icon-font">&#xe004;</i>留言管理</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Job/lst"><i class="icon-font">&#xe012;</i>求职信息</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Link/lst"><i class="icon-font">&#xe052;</i>友情链接</a></li>
+                    <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li> -->
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="icon-font">&#xe018;</i>系统管理</a>
+                <ul class="sub-menu">
+                    <li><a href="/MlyBook/index.php/Admin/System/lst"><i class="icon-font">&#xe017;</i>系统设置</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Admin/lst"><i class="icon-font">&#xe006;</i>管理员管理</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Privilege/lst"><i class="icon-font">&#xe037;</i>权限列表</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Role/lst"><i class="icon-font">&#xe046;</i>角色列表</a></li>
+                    <li><a href="system.html"><i class="icon-font">&#xe045;</i>数据还原</a></li>
+                </ul>
+            </li>
+                 
+        </ul>
+    </div>
+</div>
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">管理员管理</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/MlyBook/index.php/Admin/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">管理员管理</span></div>
         </div>
         <div class="search-wrap">
             <div class="search-content">
@@ -82,8 +92,8 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="/Book/index.php/Admin/Admin/add" class="btn btn-primary btn2"><i class="icon-font"></i>新增管理员</a>
-                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i><input form="myform" formaction="/Book/index.php/Admin/Admin/bdel" type="submit" class="btn btn-primary btn2" onclick="return confirm('确定删除这些管理员吗？');" value="批量删除" /></a>
+                        <a href="/MlyBook/index.php/Admin/Admin/add" class="btn btn-primary btn2"><i class="icon-font"></i>新增管理员</a>
+                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i><input form="myform" formaction="/MlyBook/index.php/Admin/Admin/bdel" type="submit" class="btn btn-primary btn2" onclick="return confirm('确定删除这些管理员吗？');" value="批量删除" /></a>
                         
                     </div>
                 </div>
@@ -104,8 +114,8 @@
                             <td><?php echo ($vo["username"]); ?></td>
                             <td><?php echo ($vo["rolename"]); ?></td>
                             <td>
-                                <a class="link-update" href="/Book/index.php/Admin/Admin/edit/id/<?php echo ($vo["id"]); ?>">修改</a>
-                                <?php if($vo['id'] != 1): ?><a class="link-del" onclick="return confirm('确定删除此管理员吗？');" href="/Book/index.php/Admin/Admin/del/id/<?php echo ($vo["id"]); ?>">删除</a><?php endif; ?>
+                                <a class="link-update" href="/MlyBook/index.php/Admin/Admin/edit/id/<?php echo ($vo["id"]); ?>">修改</a>
+                                <?php if($vo['id'] != 1): ?><a class="link-del" onclick="return confirm('确定删除此管理员吗？');" href="/MlyBook/index.php/Admin/Admin/del/id/<?php echo ($vo["id"]); ?>">删除</a><?php endif; ?>
                             </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>

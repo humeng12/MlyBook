@@ -2,11 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>总任务-后台管理</title>
+    <title>查看详情——后台管理</title>
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
 <script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8" src="/MlyBook/Public/ueditor1.4.3.3/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/MlyBook/Public/ueditor1.4.3.3/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="/MlyBook/Public/ueditor1.4.3.3/lang/zh-cn/zh-cn.js"></script>
 
 </head>
 <body>
@@ -75,73 +82,79 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i>
-                <a href="/MlyBook/index.php/Admin/Index/index">首页</a>
-                <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">书籍目录</span>
-            </div>
+            <i class="icon-font"></i>
+            <a href="/MlyBook/index.php/Admin/Index/index">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <a class="crumb-name" href="/MlyBook/index.php/Admin/Task/index">总任务</a>
+            <span class="crumb-step">&gt;</span>
+            <span>查看详情</span>
         </div>
-
-        <div class="search-wrap">
-            <div class="search-content">
-                <form action="">
-                    <table class="search-tab">
-                        <tr>
-                            <th width="70">关键字:</th>
-                            <td><input class="common-text" placeholder="关键字" name="kw" value="<?php echo I('kw');?>" id="" type="text"></td>
-                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
-                        </tr>
-                    </table>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo ($tasks["id"]); ?>" />
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <!-- <tr>
+                                <th><i class="require-red">*</i>添加时间：</th>
+                                <td>
+                                    <input class="common-text required" name="tasktime" size="50" value="<?php echo ($tasks["tasktime"]); ?>" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>书籍标题：</th>
+                                <td><input class="common-text" name="title" size="50" value="<?php echo ($tasks["title"]); ?>" type="text"></td>
+                            </tr>
+                             <tr>
+                                <th><i class="require-red">*</i>书籍作者：</th>
+                                <td><input class="common-text" name="author" size="50" value="<?php echo ($tasks["author"]); ?>" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>书籍封面图：</th>
+                                <td><img src="/MlyBook/<?php echo ($tasks["image"]); ?>" height="50" style="margin-top: 10px;margin-bottom: 10px;" /></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>阅读难度：</th>
+                                <td>
+                                    <div id="star" data-num="<?php echo ($tasks["degree"]); ?>"></div>
+                                    <div id="function-hint" class="hint"></div>     
+                                    <input id="star-num" name="degree" size="50" value="<?php echo ($tasks["degree"]); ?>"  type="hidden">  
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <th><i class="require-red">*</i>书籍内容简介：</th>
+                                <td>
+                                     <textarea name="introduction" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10"><?php echo ($tasks["introduction"]); ?></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
                 </form>
             </div>
         </div>
 
-        <div class="result-wrap">
-            <form name="myform" id="myform" method="post">
-                <div class="result-title">
-                    <div class="result-list">
-                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary"><i class="icon-font"></i>新增任务</a>
-                    </div>
-                </div>
-
-                <div class="result-content">
-                    <table class="result-tab" width="100%">
-                        <tr>                          
-                            <th>ID</th>
-                            <th>时间</th>
-                            <th>书籍标题</th>
-                            <th>书籍作者</th>
-                            <th>书籍封面</th>
-                            <th>阅读难度</th>
-                            <th>书籍介绍</th>
-                            <th>操作</th>
-                        </tr>
-                        <?php if(is_array($tasks)): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>                         
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["tasktime"]); ?></td>
-                            <td><?php echo ($vo["title"]); ?></td>
-                            <td><?php echo ($vo["author"]); ?></td>
-                            <td>
-                                <?php if($vo['image'] != ''): ?><img src="/MlyBook<?php echo ($vo["image"]); ?>" height="50">
-                                <?php else: ?>
-                                暂无封面图<?php endif; ?>
-                            </td>
-                            <td><?php echo ($vo["degree"]); ?></td>
-                            <td>
-                                点击详情查看简介
-                            </td>
-                            <td>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">详情</a>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">添加</a>
-                            </td>
-                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </table>
-                    <div class="list-page"><?php echo ($page); ?></div>
-                </div>
-            </form>
-        </div>
     </div>
     <!--/main-->
 </div>
 </body>
 </html>
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        UE.getEditor('content',{initialFrameWidth:1500,initialFrameHeight:400,});
+
+
+    });
+
+</script>

@@ -6,12 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
-<script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
 
-
-
-<link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/bootstrap.css"/>
-<script type="text/javascript" src="/MlyBook/Public/js/bootstrap.min.js"></script>
 </head>
 
 <div class="topbar-wrap white">
@@ -91,11 +87,24 @@
                 		<tbody>
 	                		<tr>
 	                            <th>
-	                            	<i class="require-red">*</i>班级：
+	                            	<i class="require-red">*</i>班级描述：
 	                            </th>
 	                            <td>
 	                                <input class="common-text required" name="classdes" size="50" type="text">
 	                            </td>
+	                        </tr>
+	                        <tr>
+	                            
+	                            <th>
+	                            	<i class="require-red">*</i>班号：
+	                            </th>
+                            	<td>
+	                                <select name="classid" style="width: 100px;">
+	                                    <option>1</option>
+	                                    <option>2</option>
+	                                    <option>3</option>
+	                                </select>
+                            	</td>
 	                        </tr>
 	                        <tr>
 	                            <th>

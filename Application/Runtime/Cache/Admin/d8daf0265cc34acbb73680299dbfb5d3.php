@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>总任务-后台管理</title>
+    <title>添加章节-后台管理</title>
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
@@ -78,7 +78,7 @@
                 <i class="icon-font"></i>
                 <a href="/MlyBook/index.php/Admin/Index/index">首页</a>
                 <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">书籍目录</span>
+                <span class="crumb-name">添加章节</span>
             </div>
         </div>
 
@@ -100,7 +100,7 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary"><i class="icon-font"></i>新增任务</a>
+                        <a href="/MlyBook/index.php/Admin/Chapter/add" class="btn btn-primary"><i class="icon-font"></i>新增章节</a>
                     </div>
                 </div>
 
@@ -108,31 +108,25 @@
                     <table class="result-tab" width="100%">
                         <tr>                          
                             <th>ID</th>
-                            <th>时间</th>
                             <th>书籍标题</th>
-                            <th>书籍作者</th>
-                            <th>书籍封面</th>
-                            <th>阅读难度</th>
-                            <th>书籍介绍</th>
+                            <th>书籍ID</th>
+                            <th>章节添加时间</th>
+                            <th>第几章</th>
+                            <th>第几节</th>
+                            <th>章节内容</th>
                             <th>操作</th>
                         </tr>
                         <?php if(is_array($tasks)): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>                         
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["tasktime"]); ?></td>
-                            <td><?php echo ($vo["title"]); ?></td>
-                            <td><?php echo ($vo["author"]); ?></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
-                                <?php if($vo['image'] != ''): ?><img src="/MlyBook<?php echo ($vo["image"]); ?>" height="50">
-                                <?php else: ?>
-                                暂无封面图<?php endif; ?>
-                            </td>
-                            <td><?php echo ($vo["degree"]); ?></td>
-                            <td>
-                                点击详情查看简介
-                            </td>
-                            <td>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">详情</a>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">添加</a>
+                                <!-- <a class="btn btn-info" href="/MlyBook/index.php/Admin/Chapter/edit/id/<?php echo ($vo["id"]); ?>">详情</a> -->
+                                <a class="btn btn-info" href="/MlyBook/index.php/Admin/Chapter/edit/id/<?php echo ($vo["id"]); ?>">添加</a>
                             </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>

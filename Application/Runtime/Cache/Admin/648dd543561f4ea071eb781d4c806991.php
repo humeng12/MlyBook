@@ -6,12 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
-<script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
-
-
-
-<link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/bootstrap.css"/>
-<script type="text/javascript" src="/MlyBook/Public/js/bootstrap.min.js"></script>	
+<script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
+	
 </head>
 
 <div class="topbar-wrap white">

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>添加任务-后台管理</title>
+    <title>章节添加-后台管理</title>
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
@@ -88,9 +88,9 @@
 	            	<i class="icon-font"></i>
 	            	<a href="/MlyBook/index.php/Admin/Index/index">首页</a>
 	            	<span class="crumb-step">&gt;</span>
-	            	<a class="crumb-name" href="/MlyBook/index.php/Admin/Task/index">总任务</a>
+	            	<a class="crumb-name" href="/MlyBook/index.php/Admin/Chapter/index">章节内容</a>
 	            	<span class="crumb-step">&gt;</span>
-	            	<span>新增任务</span>
+	            	<span>新增章节</span>
             	</div>
             </div>
 
@@ -99,38 +99,29 @@
             	<div class="result-content">
             		<form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
 	                    <table class="insert-tab" width="100%">
-	                        <tbody>
-	                            <tr>
-	                                <th><i class="require-red">*</i>添加时间：</th>
-	                                <td><input class="common-text required" id="tasktime" name="tasktime" size="50" value="" type="text"></td>
-	                            </tr>
+	                        <tbody>	                        
 	                            <tr>
 	                                <th><i class="require-red">*</i>书籍标题：</th>
-	                                <td><input class="common-text" name="title" size="50" value="" type="text"></td>
-	                            </tr>
-	                            <tr>
-	                                <th><i class="require-red">*</i>书籍作者：</th>
-	                                <td><input class="common-text" name="author" size="50" value="" type="text"></td>
-	                            </tr>
-	                            <tr>
-	                                <th><i class="require-red">*</i>书籍封面：</th>	                 
-	                                <td style="float: left;">
-		                                <input name="image" type="file" id="doc" onchange="setImagePreview();" /> 
-		                                <img id="preview"/>
+	                                <td>
+		                                <select name="cateid" id="catid" class="required">
+		                                    <?php if(is_array($taskids)): $i = 0; $__LIST__ = $taskids;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                               			</select>
 	                                </td>
 	                            </tr>
 	                            <tr>
-	                                <th><i class="require-red">*</i>阅读难度：</th>	                     
-	                                <!-- <td><input id="input-21b" value="4" type="number" class="rating" min=0 max=5 step=0.2 data-size="lg"/></td> -->
-
-	                                <td>
-		                                <div id="star" data-num="2"></div>
-		                                <div id="function-hint" class="hint"></div>		
-		                                <input id="star-num" name="degree" size="50" value="2"  type="hidden">	
-		                            </td>	                               
+	                                <th><i class="require-red">*</i>章节添加时间：</th>
+	                                <td><input class="common-text" name="author" size="50" value="" type="text"></td>
 	                            </tr>
-	                            <tr>
-	                                <th><i class="require-red">*</i>书籍简介：</th>
+	                             <tr>
+	                                <th><i class="require-red">*</i>第几章：</th>
+	                                <td><input class="common-text" name="author" size="50" value="" type="text"></td>
+	                            </tr>
+	                             <tr>
+	                                <th><i class="require-red">*</i>第几节：</th>
+	                                <td><input class="common-text" name="author" size="50" value="" type="text"></td>
+	                            </tr>
+	                             <tr>
+	                                <th><i class="require-red">*</i>章节内容：</th>
 	                                <td><textarea name="introduction" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10"></textarea></td>
 	                            </tr>
 	                            <tr>
@@ -152,91 +143,5 @@
 
 <script>
 
-    $(document).ready(function () {
-
-    	UE.getEditor('content',{initialFrameWidth:1400,initialFrameHeight:400,});
-
-    	var star=document.getElementById("star-num");
-
-    	$("#star").raty({
-	        score:function(){
-	            return $(this).attr("data-num");
-	        },
-	        click: function(score, evt) {
-	        	star.value = score;
-	    		//alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
-	  		},
-	  		targetType: 'hint',
-		  	cancel    : false,
-	        targetKeep: true,
-			targetText: '请选择阅读难度',
-			hints     : ['很容易','比较容易','容易','较难','很难'],
-			target    : '#function-hint',
-	        starOn:'/MlyBook/Public/images/star-on.png',
-	        starOff:'/MlyBook/Public/images/star-off.png',
-	        starHalf:'/MlyBook/Public/images/star-half.png',
-	       	readOnly:false,
-	        halfShow:false,
-	        size:34,
-	        number: 5,
-	    });
-
-
-
-
-	    var mydate = new Date();
-		var year = mydate.getFullYear();
-		var day = mydate.getDate();
-	    var str = "";
-	    str += (year+"/");
-	    str += (mydate.getMonth()+1) + "/";
-	    str += day;
-
-  		$("#tasktime").attr("value",str);
-
-
-
-  		setImagePreview();
-
-	});
-
-
-   	//下面用于图片上传预览功能
-	function setImagePreview() {
-		var docObj=document.getElementById("doc");
-		var imgObjPreview=document.getElementById("preview");
-
-		if (docObj.files && docObj.files[0]){
-
-			imgObjPreview.style.width = "50px";
-			imgObjPreview.style.height = "80px";
-
-			if (window.navigator.userAgent.indexOf("Chrome") >= 1 || window.navigator.userAgent.indexOf("Safari") >= 1) { 
-				imgObjPreview.src = window.webkitURL.createObjectURL(docObj.files[0]); 
-			} 
-			else { 
-				imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]); 
-			} 
-		}else{
-			
-			//IE下，使用滤镜 
-			docObj.select(); 
-			docObj.blur(); 
-			var imgSrc = document.selection.createRange().text;
-
-			imgObjPreview.style.width = "50px";
-			imgObjPreview.style.height = "80px";
-
-			try { 
-				imgObjPreview.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; 
-				imgObjPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc; 
-			} catch (e) { 
-				alert("您上传的图片格式不正确，请重新选择！"); 
-				return false; 
-			} 
-		}
-		
-		return true;
-	}
- 
+   UE.getEditor('content',{initialFrameWidth:1400,initialFrameHeight:400,});
 </script>

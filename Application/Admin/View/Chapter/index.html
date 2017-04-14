@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>总任务-后台管理</title>
+    <title>添加章节-后台管理</title>
     <include file="Common/head"/>
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <i class="icon-font"></i>
                 <a href="__MODULE__/Index/index">首页</a>
                 <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">书籍目录</span>
+                <span class="crumb-name">添加章节</span>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="__CONTROLLER__/add" class="btn btn-primary"><i class="icon-font"></i>新增任务</a>
+                        <a href="__CONTROLLER__/add" class="btn btn-primary"><i class="icon-font"></i>新增章节</a>
                     </div>
                 </div>
 
@@ -46,34 +46,25 @@
                     <table class="result-tab" width="100%">
                         <tr>                          
                             <th>ID</th>
-                            <th>时间</th>
                             <th>书籍标题</th>
-                            <th>书籍作者</th>
-                            <th>书籍封面</th>
-                            <th>阅读难度</th>
-                            <th>书籍介绍</th>
+                            <th>书籍ID</th>
+                            <th>章节添加时间</th>
+                            <th>第几章</th>
+                            <th>第几节</th>
+                            <th>章节内容</th>
                             <th>操作</th>
                         </tr>
                         <volist name="tasks" id="vo">
                         <tr>                         
-                            <td>{$vo.id}</td>
-                            <td>{$vo.tasktime}</td>
-                            <td>{$vo.title}</td>
-                            <td>{$vo.author}</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
-                                <if condition="$vo['image'] neq ''">   
-                                <img src="__ROOT__{$vo.image}" height="50">
-                                <else />
-                                暂无封面图
-                                </if>
-                            </td>
-                            <td>{$vo.degree}</td>
-                            <td>
-                                点击详情查看简介
-                            </td>
-                            <td>
-                                 <a class="btn btn-info" href="__CONTROLLER__/edit/id/{$vo.id}">详情</a>
-                                 <a class="btn btn-info" href="__CONTROLLER__/edit/id/{$vo.id}">添加</a>
+                                 <a class="btn btn-info" href="__CONTROLLER__/edit/id/{$vo.id}">详情/修改</a>
                             </td>
                         </tr>
                         </volist>

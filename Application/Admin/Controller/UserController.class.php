@@ -68,7 +68,8 @@ class UserController extends CommonController {
     		$data['classdes'] = I('classdes');
     		$data['classnum'] = I('classnum');
     		$data['isdivide'] = 1;
-    		$data['classtime'] = (I('classtime').'  '.date("h:i:sa"));
+            $data['classid'] = I('classid');
+    		$data['classtime'] = date('y-m-d h:i:s',time());
 
     		if ($user->create($data)) {
 

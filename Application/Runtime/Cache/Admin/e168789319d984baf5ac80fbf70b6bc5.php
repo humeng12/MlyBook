@@ -6,12 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
-<script type="text/javascript" src="/MlyBook/Public/js/jquery-1.4.2.min.js"></script>
-
-
-
-<link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/bootstrap.css"/>
-<script type="text/javascript" src="/MlyBook/Public/js/bootstrap.min.js"></script>			
+<script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
+			
 </head>
 
 <div class="topbar-wrap white">
@@ -102,6 +98,7 @@
                             <th>ID</th>
                             <th>昵称</th>
                             <th>班级</th>
+                            <th>班号</th>
                             <th>学号</th>
                             <th>入学时间</th>
                         </tr>
@@ -111,6 +108,9 @@
 	                            <td>
 	                            	<?php if($vo["classdes"] == ''): ?>暂无班级,请先分班<?php else: echo ($vo["classdes"]); endif; ?>
 	                            </td>
+                                 <td>
+                                    <?php echo ($vo["classid"]); ?>
+                                </td>
 	                            <td>
 	                            	<?php if($vo["classnum"] == ''): else: echo ($vo["classnum"]); endif; ?>
 	                            </td>
