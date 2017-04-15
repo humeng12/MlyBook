@@ -58,7 +58,7 @@
                 <a href="#"><i class="icon-font">&#xe003;</i>学员任务</a>
                 <ul class="sub-menu">
                     <li><a href="/MlyBook/index.php/Admin/Task/index"><i class="icon-font">&#xe008;</i>书籍目录</a></li>
-                    <li><a href="/MlyBook/index.php/Admin/Chapter/index"><i class="icon-font">&#xe008;</i>章节内容</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Chapter/index"><i class="icon-font">&#xe008;</i>章节内容</a></li>                   
                     <!-- <li><a href="/MlyBook/index.php/Admin/Cate/lst"><i class="icon-font">&#xe008;</i>栏目管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Article/lst"><i class="icon-font">&#xe005;</i>文章管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Message/lst"><i class="icon-font">&#xe004;</i>留言管理</a></li>
@@ -99,11 +99,7 @@
             	<div class="result-content">
             		<form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
 	                    <table class="insert-tab" width="100%">
-	                        <tbody>
-	                            <tr>
-	                                <th><i class="require-red">*</i>添加时间：</th>
-	                                <td><input class="common-text required" id="tasktime" name="tasktime" size="50" value="" type="text"></td>
-	                            </tr>
+	                        <tbody>	                    
 	                            <tr>
 	                                <th><i class="require-red">*</i>书籍标题：</th>
 	                                <td><input class="common-text" name="title" size="50" value="" type="text"></td>
@@ -115,7 +111,7 @@
 	                            <tr>
 	                                <th><i class="require-red">*</i>书籍封面：</th>	                 
 	                                <td style="float: left;">
-		                                <input name="image" type="file" id="doc" onchange="setImagePreview();" /> 
+		                                <input name="pic" type="file" id="doc" onchange="setImagePreview();" /> 
 		                                <img id="preview"/>
 	                                </td>
 	                            </tr>
@@ -180,21 +176,6 @@
 	        size:34,
 	        number: 5,
 	    });
-
-
-
-
-	    var mydate = new Date();
-		var year = mydate.getFullYear();
-		var day = mydate.getDate();
-	    var str = "";
-	    str += (year+"/");
-	    str += (mydate.getMonth()+1) + "/";
-	    str += day;
-
-  		$("#tasktime").attr("value",str);
-
-
 
   		setImagePreview();
 

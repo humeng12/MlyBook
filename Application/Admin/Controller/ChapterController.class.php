@@ -2,29 +2,51 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-
-//添加章节内容
-
 class ChapterController extends CommonController {
 
     
     public function index(){
 
-         $this->display();
-    }
+        $weektask = D('week_task');
 
+        $where = 1;
+        if($kid = I('kid')){
+            $where .= ' and bookid='.$kid;
+        }
 
+        if($cnum = I('cnum')){
+            $where .= ' and chapter='.$cnum;
+        }
 
-    public function add(){
+        if($snum = I('snum')){
+            $where .= ' and section='.$snum;
+        }
 
-        $task = D('task');
+        $count=$weektask->where($where)->count();// 查询满足要求的总记录数
+        echo $weektask->getLastSql();
+        $Page=new \Think\Page($count,10);
+        $show= $Page->show();// 分页显示输出
+        $list = $weektask->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);// 赋值数据集
+        $this->assign('page',$show);// 赋值分页输出
 
-        $taskids = $task->field('id,title')->select();
+        //$weektasks = $weektask->select();
+        //$this->assign('weektasks',$weektasks);
 
-        $this->assign('taskids',$taskids);
-
-        
         $this->display();
     }
 
+
+
+    public function edit($id){
+
+
+        $weektask = D('week_task');
+
+        $oneMess = $weektask->field('content')->find($id);
+        $this->assign('oneMess',$oneMess);
+
+        $this->display();
+
+    }
 }

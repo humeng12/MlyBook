@@ -2,11 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>章节内容-后台管理</title>
+    <title>章节内容——后台管理</title>
     <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
 <script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8" src="/MlyBook/Public/ueditor1.4.3.3/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/MlyBook/Public/ueditor1.4.3.3/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="/MlyBook/Public/ueditor1.4.3.3/lang/zh-cn/zh-cn.js"></script>
 
 </head>
 <body>
@@ -57,7 +64,7 @@
                     <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li> -->
                 </ul>
             </li>
-            <!-- <li>
+            <li>
                 <a href="#"><i class="icon-font">&#xe018;</i>系统管理</a>
                 <ul class="sub-menu">
                     <li><a href="/MlyBook/index.php/Admin/System/lst"><i class="icon-font">&#xe017;</i>系统设置</a></li>
@@ -66,7 +73,7 @@
                     <li><a href="/MlyBook/index.php/Admin/Role/lst"><i class="icon-font">&#xe046;</i>角色列表</a></li>
                     <li><a href="system.html"><i class="icon-font">&#xe045;</i>数据还原</a></li>
                 </ul>
-            </li> -->
+            </li>
                  
         </ul>
     </div>
@@ -75,59 +82,47 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i>
-                <a href="/MlyBook/index.php/Admin/Index/index">首页</a>
-                <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">章节内容</span>
-            </div>
+            <i class="icon-font"></i>
+            <a href="/MlyBook/index.php/Admin/Index/index">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <a class="crumb-name" href="/MlyBook/index.php/Admin/Chapter/index">章节</a>
+            <span class="crumb-step">&gt;</span>
+            <span>详情</span>
         </div>
-
-        <div class="search-wrap">
-            <div class="search-content">
-                <form action="">
-                    <table class="search-tab">
-                        <tr>
-                            <th width="80">关键数字:</th>
-                            <td><input class="common-text" placeholder="书籍ID" name="kid" value="<?php echo I('kid');?>" type="text" style="width: 100px;"></td>
-                            <td><input class="common-text" placeholder="章数" name="cnum" value="<?php echo I('cnum');?>" type="text" style="width: 100px;"></td>
-                            <td><input class="common-text" placeholder="节数" name="snum" value="<?php echo I('snum');?>" type="text" style="width: 100px;"></td>
-                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
-                        </tr>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo ($oneMess["id"]); ?>" />
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>章节内容：</th>
+                                <td>
+                                     <textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10"><?php echo ($oneMess["content"]); ?></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </form>
             </div>
         </div>
 
-        <div class="result-wrap">
-            <form name="myform" id="myform" method="post">
-
-                <div class="result-content">
-                    <table class="result-tab" width="100%">
-                        <tr>                          
-                            <th>ID</th>
-                            <th>书籍ID</th>
-                            <th>第几章</th>
-                            <th>第几节</th>
-                            <th>章节内容</th>
-                            <th>操作</th>
-                        </tr>
-                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>                         
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["bookid"]); ?></td>
-                            <td><?php echo ($vo["chapter"]); ?></td>
-                            <td><?php echo ($vo["section"]); ?></td>
-                            <td>点击详情查看章节内容</td>
-                            <td>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Chapter/edit/id/<?php echo ($vo["id"]); ?>">详情</a>
-                            </td>
-                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </table>
-                    <div class="list-page"><?php echo ($page); ?></div>
-                </div>
-            </form>
-        </div>
     </div>
     <!--/main-->
 </div>
 </body>
 </html>
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        UE.getEditor('content',{initialFrameWidth:1500,initialFrameHeight:400,});
+
+
+    });
+
+</script>

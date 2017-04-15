@@ -48,7 +48,7 @@
                 <a href="#"><i class="icon-font">&#xe003;</i>学员任务</a>
                 <ul class="sub-menu">
                     <li><a href="/MlyBook/index.php/Admin/Task/index"><i class="icon-font">&#xe008;</i>书籍目录</a></li>
-                    <li><a href="/MlyBook/index.php/Admin/Chapter/index"><i class="icon-font">&#xe008;</i>章节内容</a></li>
+                    <li><a href="/MlyBook/index.php/Admin/Chapter/index"><i class="icon-font">&#xe008;</i>章节内容</a></li>                   
                     <!-- <li><a href="/MlyBook/index.php/Admin/Cate/lst"><i class="icon-font">&#xe008;</i>栏目管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Article/lst"><i class="icon-font">&#xe005;</i>文章管理</a></li>
                     <li><a href="/MlyBook/index.php/Admin/Message/lst"><i class="icon-font">&#xe004;</i>留言管理</a></li>
@@ -57,7 +57,7 @@
                     <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li> -->
                 </ul>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#"><i class="icon-font">&#xe018;</i>系统管理</a>
                 <ul class="sub-menu">
                     <li><a href="/MlyBook/index.php/Admin/System/lst"><i class="icon-font">&#xe017;</i>系统设置</a></li>
@@ -66,7 +66,7 @@
                     <li><a href="/MlyBook/index.php/Admin/Role/lst"><i class="icon-font">&#xe046;</i>角色列表</a></li>
                     <li><a href="system.html"><i class="icon-font">&#xe045;</i>数据还原</a></li>
                 </ul>
-            </li>
+            </li> -->
                  
         </ul>
     </div>
@@ -100,7 +100,7 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary"><i class="icon-font"></i>新增任务</a>
+                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary"><i class="icon-font"></i>新增书籍</a>
                     </div>
                 </div>
 
@@ -132,7 +132,7 @@
                             </td>
                             <td>
                                  <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">详情</a>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">添加</a>
+                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/chapter/id/<?php echo ($vo["id"]); ?>">添加章节</a>
                             </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>

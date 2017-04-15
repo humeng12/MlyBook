@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>添加章节-后台管理</title>
+    <title>章节内容-后台管理</title>
     <include file="Common/head"/>
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <i class="icon-font"></i>
                 <a href="__MODULE__/Index/index">首页</a>
                 <span class="crumb-step">&gt;</span>
-                <span class="crumb-name">添加章节</span>
+                <span class="crumb-name">章节内容</span>
             </div>
         </div>
 
@@ -25,8 +25,10 @@
                 <form action="">
                     <table class="search-tab">
                         <tr>
-                            <th width="70">关键字:</th>
-                            <td><input class="common-text" placeholder="关键字" name="kw" value="<?php echo I('kw');?>" id="" type="text"></td>
+                            <th width="80">关键数字:</th>
+                            <td><input class="common-text" placeholder="书籍ID" name="kid" value="<?php echo I('kid');?>" type="text" style="width: 100px;"></td>
+                            <td><input class="common-text" placeholder="章数" name="cnum" value="<?php echo I('cnum');?>" type="text" style="width: 100px;"></td>
+                            <td><input class="common-text" placeholder="节数" name="snum" value="<?php echo I('snum');?>" type="text" style="width: 100px;"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
                         </tr>
                     </table>
@@ -36,35 +38,26 @@
 
         <div class="result-wrap">
             <form name="myform" id="myform" method="post">
-                <div class="result-title">
-                    <div class="result-list">
-                        <a href="__CONTROLLER__/add" class="btn btn-primary"><i class="icon-font"></i>新增章节</a>
-                    </div>
-                </div>
 
                 <div class="result-content">
                     <table class="result-tab" width="100%">
                         <tr>                          
                             <th>ID</th>
-                            <th>书籍标题</th>
                             <th>书籍ID</th>
-                            <th>章节添加时间</th>
                             <th>第几章</th>
                             <th>第几节</th>
                             <th>章节内容</th>
                             <th>操作</th>
                         </tr>
-                        <volist name="tasks" id="vo">
+                        <volist name="list" id="vo">
                         <tr>                         
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.bookid}</td>
+                            <td>{$vo.chapter}</td>
+                            <td>{$vo.section}</td>
+                            <td>点击详情查看章节内容</td>
                             <td>
-                                 <a class="btn btn-info" href="__CONTROLLER__/edit/id/{$vo.id}">详情/修改</a>
+                                 <a class="btn btn-info" href="__CONTROLLER__/edit/id/{$vo.id}">详情</a>
                             </td>
                         </tr>
                         </volist>

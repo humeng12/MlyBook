@@ -38,7 +38,7 @@ class TaskController extends CommonController {
             $data['degree'] = I('degree');
             $data['introduction'] = I('introduction');
 
-            if($_FILES['image']['tmp_name']!=''){
+            if($_FILES['pic']['tmp_name']!=''){
 
                 $upload = new \Think\Upload();// 实例化上传类
                 $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -46,11 +46,11 @@ class TaskController extends CommonController {
                 $upload->savePath  =      '/Public/Uploads/'; // 设置附件上传目录
                 $upload->rootPath='./';
 
-                $info=$upload->uploadOne($_FILES['image']);
+                $info=$upload->uploadOne($_FILES['pic']);
                 if(!$info) {
                     $this->error($upload->getError());
                 }else{ 
-                     $data['image']=$info['savepath'].$info['savename']; 
+                     $data['pic']=$info['savepath'].$info['savename']; 
                 }
             }else{
                 $this->error("请上传封面图!");
@@ -98,6 +98,87 @@ class TaskController extends CommonController {
         }
         $tasks = $task->find($id);
         $this->assign('tasks',$tasks);
+        $this->display();
+    }
+
+
+
+    /**
+     * 添加书籍章节内容
+     * @param  [type] $id [书籍id]
+     */
+    public function chapter($id){
+
+        //取出书籍的名称
+        $task = D('task');
+        $title = $task->where('id = '.$id)->field('title')->find();
+        $this->assign('title',$title);
+
+        $weektask = D('week_task');
+
+        //取出已输入的章节数
+        $chapterNum = $weektask->where('bookid = '.$id)->field('chapter')->max('chapter');
+        $sectionNum = $weektask->where('bookid = '.$id)->field('section')->max('section');
+
+        //下一节数
+        $nextSecNum = (int)$sectionNum + 1;
+
+        $this->assign('chapterNum',$chapterNum);
+        $this->assign('sectionNum',$sectionNum);
+        $this->assign('nextSecNum',$nextSecNum);
+
+        if (IS_POST) {
+            
+            $data['bookid'] = $id;
+            $data['uploadtime'] = date('y-m-d h:i:s',time());
+
+            $chapter = I('chapter');
+            if (empty($chapter)) {
+                $this->error('请输入第几章');
+                return;
+            }
+
+            if (!preg_match("/^\d*$/",$chapter)) {
+                $this->error('请输入纯数字');
+                return; 
+            }
+
+            $section = I('section');
+            if (empty($section)) {
+                $this->error('请输入第几节');
+                return;
+            }
+
+            if (!preg_match("/^\d*$/",$section)) {
+                $this->error('请输入纯数字');
+                return; 
+            }
+
+            $content = I('content');
+            if (empty($content)) {
+                $this->error('请输入章节内容');
+                return;
+            }
+
+            $data['chapter'] = $chapter;
+            $data['section'] = $section;
+            $data['content'] = $content;
+
+            if ($weektask->create($data)) {
+                
+                if ($weektask->add()) {
+                    $this->success('添加章节内容成功',U('index'));
+                }else{
+                    $this->error('添加章节内容失败');
+                }
+            }else{
+                 $this->error($weektask->getError());   
+            }
+
+
+            return;
+        }
+
         $this->display();
     }
 }
