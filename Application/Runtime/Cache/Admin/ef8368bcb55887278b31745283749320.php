@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="/MlyBook/Public/css/main.css"/>
 <script type="text/javascript" src="/MlyBook/Public/js/libs/modernizr.min.js"></script>
 <script type="text/javascript" src="/MlyBook/Public/js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/MlyBook/Public/layui/css/layui.css"/>
 
 </head>
 <body>
@@ -36,6 +37,12 @@
 
     <div class="sidebar-content">
         <ul class="sidebar-list">
+            <!-- <li>
+                <a href="#"><i class="icon-font">&#xe003;</i>微信相关操作</a>
+                <ul class="sub-menu">
+                    <li><a href="/MlyBook/index.php/Admin/WeiXin/index"><i class="icon-font">&#xe008;</i>发送简单信息</a></li>
+                </ul>
+            </li> -->
             <li>
                 <a href="#"><i class="icon-font">&#xe003;</i>基本操作</a>
                 <ul class="sub-menu">
@@ -89,7 +96,7 @@
                         <tr>
                             <th width="70">关键字:</th>
                             <td><input class="common-text" placeholder="关键字" name="kw" value="<?php echo I('kw');?>" id="" type="text"></td>
-                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                            <td><input class="layui-btn layui-btn-normal" name="sub" value="查询" type="submit"></td>
                         </tr>
                     </table>
                 </form>
@@ -100,7 +107,7 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="/MlyBook/index.php/Admin/Task/add" class="btn btn-primary"><i class="icon-font"></i>新增书籍</a>
+                        <a href="/MlyBook/index.php/Admin/Task/add" class="layui-btn layui-btn-normal"><i class="icon-font"></i>新增书籍</a>
                     </div>
                 </div>
 
@@ -131,8 +138,8 @@
                                 点击详情查看简介
                             </td>
                             <td>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">详情</a>
-                                 <a class="btn btn-info" href="/MlyBook/index.php/Admin/Task/chapter/id/<?php echo ($vo["id"]); ?>">添加章节</a>
+                                 <a class="layui-btn layui-btn-normal layui-btn-mini" href="/MlyBook/index.php/Admin/Task/edit/id/<?php echo ($vo["id"]); ?>">详情</a>
+                                 <a class="layui-btn layui-btn-mini" href="/MlyBook/index.php/Admin/Task/chapter/id/<?php echo ($vo["id"]); ?>">添加章节</a>
                             </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>

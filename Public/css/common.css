@@ -120,3 +120,16 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
 .list-page a{margin:0 5px;padding:2px 7px;border:1px solid #ccc;background:#f3f3f3;}
 .list-page a:hover{background:#e4e4e4;border:1px solid #908f8f;}
 .list-page .current{margin:0 5px;padding:2px 7px;background:#f60;border:1px solid #fe8101;color:#fff;}
+
+
+
+
+
+
+/* a/input样式 */
+.yellow-xt{ background: #ffb849; color: #fff;}
+.red-xt{ background: #da542e; color: #fff;}
+.blue-xt{ background: #2596d4; color: #fff;}
+.green-xt{ background: #21b6b4; color: #fff;}
+.green-int{ background: #21b6b4; color: #fff; padding: 6px 20px; border: none; border-radius: 8px; font-size: 14px;}
+.yellow-int{ background: #ffb849; color: #fff; padding: 6px 20px; border: none; border-radius: 8px; font-size: 14px;}

@@ -302,6 +302,37 @@ abstract class Controller {
         // 执行后续操作
         Hook::listen('action_end');
     }
+
+
+
+
+
+    /**
+ * [apiReturn 用于给app提供接口使用 带有请求结果状态表示,和结果提示，默认返回json]
+ * @param  [number] $status  [请求结果的状态标识，设定后要在文档中给予说明]
+ * @param  string $message [请求结果的提示语句]
+ * @param  [array] $data    [请求返回的数据,app前端需要的数据]
+ * @param  [string] $type    [要返回的数据类型，支持json,xml，默认返回json]
+ * @return [json或xml]          [返回数据]
+ */
+    protected function apiReturn($status,$message='',$data,$type){
+
+        if(!is_numeric($status) || !is_string($message) ){
+            $this->apiReturn('400','参数错误');
+        }
+        $res = array();
+        $res['status'] = $status;
+        $res['message'] = $message;
+        $res['data'] = $data;
+
+        if(in_array($type, array('json','xml'))){
+            $this->ajaxReturn($res,$type);
+        }else{
+            $this->ajaxReturn($res);
+        }
+        
+    }
+    
 }
 // 设置控制器别名 便于升级
 class_alias('Think\Controller','Think\Action');

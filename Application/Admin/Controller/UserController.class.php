@@ -3,8 +3,6 @@ namespace Admin\Controller;
 use Think\Controller;
 
 class UserController extends CommonController {
-
-    
     public function index(){
 
     	$user = D('user');
@@ -19,11 +17,7 @@ class UserController extends CommonController {
     }
 
 
-   /**
-    * @时间     2017-04-12
-    * @函数描述   [查询已分班的人员信息]
-    * @参数描述   [无参数]
-    */
+
     public function divide(){
 
 
@@ -37,11 +31,8 @@ class UserController extends CommonController {
 
     }
 
-    /**
-     * @时间     2017-04-12
-     * @函数描述   [查询还没分班的人员信息]
-     * @参数描述   [无参数]
-     */
+
+    //
     public function undivide(){
 
     	$user = D('user');
@@ -54,11 +45,7 @@ class UserController extends CommonController {
     }
 
 
-    /**
-     * @时间     2017-04-12
-     * @函数描述   [插入分班后的信息]
-     * @param  [type]     $id [userid]
-     */
+
     public function edit($id){
 
     	$user=D('user');
@@ -68,8 +55,7 @@ class UserController extends CommonController {
     		$data['classdes'] = I('classdes');
     		$data['classnum'] = I('classnum');
     		$data['isdivide'] = 1;
-            $data['classid'] = I('classid');
-    		$data['classtime'] = date('y-m-d h:i:s',time());
+    		$data['classtime'] = (I('classtime').'  '.date("h:i:sa"));
 
     		if ($user->create($data)) {
 
