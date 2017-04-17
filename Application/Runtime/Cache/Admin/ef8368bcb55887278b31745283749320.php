@@ -129,7 +129,7 @@
                             <td><?php echo ($vo["title"]); ?></td>
                             <td><?php echo ($vo["author"]); ?></td>
                             <td>
-                                <?php if($vo['image'] != ''): ?><img src="/MlyBook<?php echo ($vo["image"]); ?>" height="50">
+                                <?php if($vo['pic'] != ''): ?><img src="/MlyBook/<?php echo ($vo["pic"]); ?>" height="50">
                                 <?php else: ?>
                                 暂无封面图<?php endif; ?>
                             </td>

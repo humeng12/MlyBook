@@ -61,8 +61,8 @@
                             <td>{$vo.title}</td>
                             <td>{$vo.author}</td>
                             <td>
-                                <if condition="$vo['image'] neq ''">   
-                                <img src="__ROOT__{$vo.image}" height="50">
+                                <if condition="$vo['pic'] neq ''">   
+                                <img src="__ROOT__/{$vo.pic}" height="50">
                                 <else />
                                 暂无封面图
                                 </if>

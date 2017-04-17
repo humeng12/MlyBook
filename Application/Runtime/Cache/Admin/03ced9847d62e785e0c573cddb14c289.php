@@ -47,6 +47,12 @@
 
     <div class="sidebar-content">
         <ul class="sidebar-list">
+            <!-- <li>
+                <a href="#"><i class="icon-font">&#xe003;</i>微信相关操作</a>
+                <ul class="sub-menu">
+                    <li><a href="/MlyBook/index.php/Admin/WeiXin/index"><i class="icon-font">&#xe008;</i>发送简单信息</a></li>
+                </ul>
+            </li> -->
             <li>
                 <a href="#"><i class="icon-font">&#xe003;</i>基本操作</a>
                 <ul class="sub-menu">
